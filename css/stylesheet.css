@@ -1,27 +1,13 @@
 h1{
-    color: #334259;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-}
-h2{
-    font-size: 1.5em;
+    color: blue
 }
 body{
-    background-color: #edddd0;
+    background-color:papayawhip
 }
-footer, nav, .bcit{
-    background-color: #a6cad4;
+nav{
+    background-color: lightblue;
     text-align: center;
 }
 article{
-    max-width: 1000px;
-}
-.flex{
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-.flex > p, img {
-    max-width: 500px;
+    text-align: center;
 }
