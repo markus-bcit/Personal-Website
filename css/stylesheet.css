@@ -49,4 +49,8 @@ ul > li{
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+    nav{
+        background-color: #a6cad4;
+        display: block;
+    }
 }
