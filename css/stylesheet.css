@@ -22,7 +22,7 @@ nav{
     padding-bottom: 10px;
 }
 
-blue{
+.blue{
     background-color: #a6cad4;
     text-align: center;
 }
@@ -37,20 +37,34 @@ blue{
 }
 ul.bot-border{
     list-style-type: none;
-    margin: 0;
+    margin: 10;
     padding: 0;
 }
+
 ul > li{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.li-border{
     border-bottom: #a6cad4 solid 2px;
 }
 
 @media screen and (min-width: 600px) {
-    li{
+    ul > li{
         display: grid;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 2fr;
+        padding-bottom: 20px;
+    }
+    .date{
+        grid-area: 2 / 1;
     }
     nav{
         background-color: #a6cad4;
         display: block;
+    }
+    .li-border{
+        border-bottom: grey solid 3px;
     }
 }
