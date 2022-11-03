@@ -2,6 +2,7 @@ h1{
     color: #334259;
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
+    margin-top: 0;
 }
 h2{
     font-size: 1.5em;
@@ -9,7 +10,18 @@ h2{
 body{
     background-color: #edddd0;
 }
-footer, .blue{
+footer{
+    background-color: #a6cad4;
+    text-align: center;
+}
+nav{
+    background-color: #a6cad4;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 0fr 1.5em 1.5em;
+}
+
+blue{
     background-color: #a6cad4;
     text-align: center;
 }
@@ -23,10 +35,12 @@ footer, .blue{
     max-width: 70%;
 }
 ul.bot-border{
-    border-bottom: #334259 solid;
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+ul > li{
+    border-bottom: #a6cad4 solid 2px;
 }
 
 @media screen and (min-width: 600px) {
