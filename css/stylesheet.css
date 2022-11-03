@@ -9,12 +9,9 @@ h2{
 body{
     background-color: #edddd0;
 }
-footer, nav, .bcit{
+footer, .blue{
     background-color: #a6cad4;
     text-align: center;
-}
-article{
-    max-width: 1000px;
 }
 .flex{
     display: flex;
@@ -23,5 +20,15 @@ article{
     align-content: space-between;
 }
 .flex > p, img {
-    max-width: 500px;
+    max-width: 70%;
+}
+ul.bot-border{
+    border-bottom: #334259 solid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+    
 }
