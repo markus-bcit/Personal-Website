@@ -18,7 +18,8 @@ nav{
     background-color: #a6cad4;
     text-align: center;
     display: grid;
-    grid-template-rows: 0fr 1.5em 1.5em;
+    grid-template-rows: 0fr 1.5em;
+    padding-bottom: 10px;
 }
 
 blue{
@@ -44,5 +45,8 @@ ul > li{
 }
 
 @media screen and (min-width: 600px) {
-    
+    li{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
