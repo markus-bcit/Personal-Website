@@ -1,13 +1,14 @@
 
-// const courselist =  { code: ["ACIT 1620", "ORGB 1110", "ACIT 1515"],  name: ["Web Fundamental Technologies", "Orginizational Behaviour", "Scripting for IT"]}
+const courselist =  [{ code: ["ACIT 1620", "ORGB 1110", "ACIT 1515"],  name: ["Web Fundamental Technologies", "Orginizational Behaviour", "Scripting for IT"]}]
 
 let input;
 
 do {
-    input = prompt("Enter a 4 digit number:");
+    input = prompt("Enter a 4 digit class number:");
 
     if (input !== '1620' && input !== '1110' && input !== '1515'){
-        console.log("Not a 4 Digit Number");
+        console.log("Not a class number");
+        courselist.push({code: input, name})
     }
 } while (input !== '1620' && input !== '1110' && input !== '1515');
 
@@ -15,13 +16,14 @@ do {
 
 if (input === "1620")
 {
-console.log(`Yes I am taking the course: ${input} Web Fundamental Technologies`);
+console.log(`Yes I am taking the course: ACIT ${input} - Web Fundamental Technologies`);
 }
-if (input === "1110")
+else if (input === "1110")
 {
-console.log(`Yes I am taking the course: ${input} Orginizational Behaviour`);
+console.log(`Yes I am taking the course: ORGB ${input} - Orginizational Behaviour`);
 }
-if (input === "1515")
+else if (input === "1515")
 {
-console.log(`Yes I am taking the course: ${input} Scripting for IT`);
+console.log(`Yes I am taking the course: ACIT ${input} -  Scripting for IT`);
 }
+console.log(courselist)
