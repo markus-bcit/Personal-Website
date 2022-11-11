@@ -12,18 +12,11 @@ do {
     }
 } while (input !== '1620' && input !== '1110' && input !== '1515');
 
-
-
-if (input === "1620")
+for (let x = 0; x < courselist[0]['code'].length; x++) 
 {
-console.log(`Yes I am taking the course: ACIT ${input} - Web Fundamental Technologies`);
-}
-else if (input === "1110")
-{
-console.log(`Yes I am taking the course: ORGB ${input} - Orginizational Behaviour`);
-}
-else if (input === "1515")
-{
-console.log(`Yes I am taking the course: ACIT ${input} -  Scripting for IT`);
+    if (courselist[0]['code'][x].includes(input)) {
+        console.log(`Yes I am taking the course: ${courselist[0]['code'][x]} - ${courselist[0]['name'][x]}`)
+    }
+        
 }
 console.log(courselist)
